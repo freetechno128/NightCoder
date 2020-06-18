@@ -3,7 +3,7 @@ import Emoji from '../../atoms/Emoji';
 
 const LogoIcon = () => {
     return (
-        <Emoji symbol="🦄" />
+        <Emoji symbol="🦄" fontSize="40px" />
     )
 }
 
