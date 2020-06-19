@@ -2,10 +2,12 @@ import React from 'react';
 import Logo from './Logo';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
+import { ReactComponent as HamburgerMenu } from './hamburger_menu.svg';
+
 
 const Nav = styled.nav`
-	background: #100e17;
-	padding: 10px 20px;
+	background: #fff;
+	padding: 10px 26px;
 `;
 
 const Menu = styled.ul`
@@ -18,7 +20,7 @@ const Menu = styled.ul`
 	padding: 0;
 	& a {
 		text-decoration: none;
-		color: white;
+		color: black;
 	}
 `;
 
@@ -28,17 +30,17 @@ const ItemLogo = styled.li`
 
 const ItemButton = styled.li`
 	text-decoration: none;
-	padding: 10px 20px;
+	padding: 10px 14px;
+	font-size: 14px;
+	font-weight: 600;
+	letter-spacing: 1px;
 	&:hover {
 		background-color: rgba(255,255,255, 0.1)
 	}
+
 	
 `;
 
-const ItemInput = styled.li`
-	margin-left: auto;
-
-`;
 
 const Header = () => {
   return (
@@ -47,15 +49,21 @@ const Header = () => {
 		<ItemLogo>
 			<Logo />
 		</ItemLogo>
-		<Link to="/">
-		<ItemButton>Home</ItemButton>
-		</Link>
-        <ItemButton>
-			<Link to="/blog">Blog</Link>
+		<ItemButton className="d-none d-lg-block" >
+			<Link to="/">HOME</Link>
+		</ItemButton>
+		<ItemButton className="d-none d-lg-block" >
+			<Link to="/blog">BLOG</Link>
         </ItemButton>
-        <ItemButton>
-			<Link to="/contact">Contact</Link>
+		<ItemButton className="d-none d-lg-block" >
+			<Link to="/contact">CONTACT</Link>
         </ItemButton>
+		<ItemButton className="d-none d-lg-block" >
+			<Link to="/contact">CONTACT</Link>
+        </ItemButton>
+		<ItemButton className="d-lg-none d-xl-none">
+			<HamburgerMenu />
+		</ItemButton>
       </Menu>
     </Nav>
   );

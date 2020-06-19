@@ -1,18 +1,20 @@
-.card {
-    min-width: 200px;
-    width: 30%;
-    border-radius: 10px;
-    color: #fff;
-    display: block;
-    margin:30px 3px;
+.article-card {
+    // min-width: 200px;
+    // width: 20%;
+    // border-radius: 10px;
+	color: black;
+    // display: block;
+    // margin:30px 14px;
+    cursor: pointer;
+    width: 100%;
     
 
     &__image {
         height: auto;
-        max-width: 100%;
+        width: 100%;
         vertical-align: middle;
         border-radius: 10px;
-        
+        box-shadow: 5px 3px 23px -4px rgba(0,0,0,0.4);
         
     }
 
@@ -26,11 +28,11 @@
     &__date {
         font-size: 12px;
         color: #fff;
-        font-weight: 600;
+        font-weight: 700;
         display: inline-block;
-        padding: 4px;
+        padding: 4px 6px;
         margin-top: 10px;
-        background-color: #9c4186;
+        background-color: #00cece;
         border-radius: 3px;
     }
 
@@ -43,6 +45,16 @@
         font-weight: 400;
         margin-top: 10px;
         font-size: 15px;
+        text-align: justify;
+        
+        }
+
+    &__more {
+        font-family: 'Raleway', sans-serif;
+        font-weight: 800;
+        font-size: 14px;
+        color: #323296;
+        margin-top: 10px;
     }
 
 }

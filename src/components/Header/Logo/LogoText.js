@@ -2,7 +2,6 @@ import React from 'react'
 import styled from 'styled-components';
 
 const StyledText = styled.div`
-	color: white;
     margin-left: 14px;
     font-size: 30px;
     font-weight: 700;
