@@ -6,6 +6,8 @@ const StyledText = styled.div`
     font-size: 30px;
     font-weight: 700;
     font-family: 'MuseoModerno', cursive;
+    color: white;
+
 
 `;
 

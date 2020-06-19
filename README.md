@@ -1,8 +1,10 @@
 # NightCoder
 
-
+### Desktop version:
 <img src="https://github.com/freetechno128/nightcoder/raw/master/preview.png" width="700">
 
+
+### Mobile version:
 <img src="https://github.com/freetechno128/nightcoder/raw/master/preview_mobile.png" width="300px">
 
 Future blog

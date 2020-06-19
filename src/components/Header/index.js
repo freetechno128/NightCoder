@@ -6,8 +6,11 @@ import { ReactComponent as HamburgerMenu } from './hamburger_menu.svg';
 
 
 const Nav = styled.nav`
-	background: #fff;
+	background: rgba(0,0,0,0);
 	padding: 10px 26px;
+	position:absolute;
+	z-index:20;
+	width: 100vw;
 `;
 
 const Menu = styled.ul`
@@ -20,7 +23,8 @@ const Menu = styled.ul`
 	padding: 0;
 	& a {
 		text-decoration: none;
-		color: black;
+		color: white;
+
 	}
 `;
 
@@ -58,10 +62,7 @@ const Header = () => {
 		<ItemButton className="d-none d-lg-block" >
 			<Link to="/contact">CONTACT</Link>
         </ItemButton>
-		<ItemButton className="d-none d-lg-block" >
-			<Link to="/contact">CONTACT</Link>
-        </ItemButton>
-		<ItemButton className="d-lg-none d-xl-none">
+		<ItemButton className="d-lg-none d-xl-none ml-auto" style={{filter: "invert(1)"}}>
 			<HamburgerMenu />
 		</ItemButton>
       </Menu>
