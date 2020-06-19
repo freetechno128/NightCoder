@@ -6,7 +6,8 @@ const StyledText = styled.div`
     margin-left: 14px;
     font-size: 30px;
     font-weight: 700;
-    font-family: 'BalsamiqSans', sans-serif;
+    font-family: 'MuseoModerno', cursive;
+
 `;
 
 const LogoText = () => {

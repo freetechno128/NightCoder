@@ -1,0 +1,48 @@
+.card {
+    min-width: 200px;
+    width: 30%;
+    border-radius: 10px;
+    color: #fff;
+    display: block;
+    margin:30px 3px;
+    
+
+    &__image {
+        height: auto;
+        max-width: 100%;
+        vertical-align: middle;
+        border-radius: 10px;
+        
+        
+    }
+
+    &__title {
+        font-size: 20px;
+        font-weight: 800;
+        margin-top: 10px;
+        font-family: 'Raleway', sans-serif;
+    }
+
+    &__date {
+        font-size: 12px;
+        color: #fff;
+        font-weight: 600;
+        display: inline-block;
+        padding: 4px;
+        margin-top: 10px;
+        background-color: #9c4186;
+        border-radius: 3px;
+    }
+
+    &__content {
+        display: -webkit-box;
+        -webkit-line-clamp: 4;
+        -webkit-box-orient: vertical;  
+        overflow: hidden;
+        line-height: 1.5;
+        font-weight: 400;
+        margin-top: 10px;
+        font-size: 15px;
+    }
+
+}

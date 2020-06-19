@@ -23,7 +23,7 @@ const Menu = styled.ul`
 `;
 
 const ItemLogo = styled.li`
-	margin-right: 40px;
+	margin-right: auto;
 `;
 
 const ItemButton = styled.li`
@@ -56,9 +56,6 @@ const Header = () => {
         <ItemButton>
 			<Link to="/contact">Contact</Link>
         </ItemButton>
-		<ItemInput>
-			<input type="text" />
-        </ItemInput>
       </Menu>
     </Nav>
   );

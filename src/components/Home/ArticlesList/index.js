@@ -1,24 +1,20 @@
 import React from 'react';
 import { Articles } from '../../../articles/Articles'
 import ArticleCard from './ArticleCard';
-
-const ArticlesList = () => {
-    return (
-        <React.Fragment>
-            { 
-                Articles.map((el)=> {
-                    return (
-                        <ArticleCard 
-                            type={el.type} 
-                            date={el.date} 
-                            title={el.title} 
-                            content={el.content} 
-                        />
-                    )
-                })
-            }
-        </React.Fragment>
-    )
-};
+import './index.scss'
+const ArticlesList = () => (
+    <div className="cards">
+        { Articles.map((el, index)=> (
+                <ArticleCard 
+                    image={el.image}
+                    date={el.date} 
+                    title={el.title} 
+                    content={el.content} 
+                    key={index}
+                />
+            )
+        )}
+    </div>
+);
 
 export default ArticlesList;
