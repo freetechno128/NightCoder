@@ -53,15 +53,21 @@ const Header = () => {
 		<ItemLogo>
 			<Logo />
 		</ItemLogo>
-		<ItemButton className="d-none d-lg-block" >
-			<Link to="/">HOME</Link>
-		</ItemButton>
-		<ItemButton className="d-none d-lg-block" >
-			<Link to="/blog">BLOG</Link>
-        </ItemButton>
-		<ItemButton className="d-none d-lg-block" >
-			<Link to="/contact">CONTACT</Link>
-        </ItemButton>
+		<Link to="/">
+			<ItemButton className="d-none d-lg-block" >
+				HOME
+			</ItemButton>
+		</Link>
+		<Link to="/blog">
+			<ItemButton className="d-none d-lg-block" >
+				BLOG
+			</ItemButton>
+		</Link>
+		<Link to="/contact">
+			<ItemButton className="d-none d-lg-block" >
+				CONTACT
+        	</ItemButton>
+		</Link>
 		<ItemButton className="d-lg-none d-xl-none ml-auto" style={{filter: "invert(1)"}}>
 			<HamburgerMenu />
 		</ItemButton>

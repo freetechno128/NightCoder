@@ -4,6 +4,21 @@
     overflow: hidden;
 }
 
+.header-text {
+  font-size: 4vw;
+  padding: 0px 60px;
+  width: 100vw;
+  text-align: center;
+  letter-spacing: 12px;
+  font-weight: 200;
+  background: linear-gradient(130deg, rgb(251, 253, 113), rgb(255, 133, 133), rgb(103, 219, 255));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  overflow: hidden;
+
+}
+
 .canvas > div {
   z-index: 1;
 }
@@ -20,4 +35,72 @@
   width: 100vw;
   height: 100vh;
   overflow: auto;
+}
+
+.footer-text--first {
+  font-size: 90px;
+  line-height: 0.8;
+  margin-left: 4vw;
+  font-weight: 200;
+  color: white;
+  letter-spacing: 7px;
+}
+
+.footer-text--second {
+  font-size: 180px;
+  line-height: 0.8;
+  margin-left: 12vw;
+  letter-spacing: 8px;
+  font-weight: 900;
+  background: linear-gradient(130deg, rgb(113, 248, 253), rgb(52, 179, 218));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.arrows {
+	width: 60px;
+	height: 72px;
+	left: 50%;
+  margin-left: -30px;
+  margin-top: calc(27vh * 1.1);
+}
+
+.arrows path {
+	stroke: #2994D1;
+	fill: transparent;
+	stroke-width: 1px;	
+	animation: arrow 2s infinite;
+	-webkit-animation: arrow 2s infinite; 
+}
+
+@keyframes arrow
+{
+0% {opacity:0}
+40% {opacity:1}
+80% {opacity:0}
+100% {opacity:0}
+}
+
+@-webkit-keyframes arrow /*Safari and Chrome*/
+{
+0% {opacity:0}
+40% {opacity:1}
+80% {opacity:0}
+100% {opacity:0}
+}
+
+.arrows path.a1 {
+	animation-delay:-1s;
+	-webkit-animation-delay:-1s; /* Safari 和 Chrome */
+}
+
+.arrows path.a2 {
+	animation-delay:-0.5s;
+	-webkit-animation-delay:-0.5s; /* Safari 和 Chrome */
+}
+
+.arrows path.a3 {	
+	animation-delay:0s;
+	-webkit-animation-delay:0s; /* Safari 和 Chrome */
 }
