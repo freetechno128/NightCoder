@@ -12,7 +12,7 @@ const StyledText = styled.div`
 `;
 
 const LogoText = () => {
-    return <StyledText>Night Coder</StyledText>;
+    return <StyledText>NightCoder</StyledText>;
 }
 
 export default LogoText;
