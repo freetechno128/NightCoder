@@ -2,14 +2,14 @@
 
 Coding blog in development ... 
 
-### Desktop version:
+#### Desktop version:
 <img src="https://github.com/freetechno128/nightcoder/raw/master/preview.png" width="700">
 
-### Mobile version:
+#### Mobile version:
 <img src="https://github.com/freetechno128/nightcoder/raw/master/preview_mobile.png" width="300px">
 
 
-### Things learned so far
+## Things learned so far
 
 * **Don't overuse styled-components (CSS-in-JS)** : CSS-in-JS is really useful when you need to control styling dynamically using states, clean unused CSS from the build or when global CSS rules become too much to handle. On the other end, they add a degree of complexity to the code. As an example: you need to inject styling with createGlobalStyle or contexts to reuse fonts & variables in the style. Following good coding practices like BEM guidelines and using conditional classes (``<div classNames={`banner ${state ? "active" : ""}`}>``) can handle most of theses edge cases.
 
