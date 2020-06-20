@@ -1,5 +1,7 @@
 # NightCoder
 
+Coding blog in development ... 
+
 ### Desktop version:
 <img src="https://github.com/freetechno128/nightcoder/raw/master/preview.png" width="700">
 
@@ -7,7 +9,9 @@
 <img src="https://github.com/freetechno128/nightcoder/raw/master/preview_mobile.png" width="300px">
 
 
-Future blog
+### Things learned so far
+
+* **Don't use styled-components (CSS-in-JS) everywhere** : It becomes really useful when you need to control styling using states, clean unused CSS from the build or when global CSS rules become too much to handle. Following BEM guidelines and using conditional classes can handle most of theses edge cases.
 
 ## Built With
 
