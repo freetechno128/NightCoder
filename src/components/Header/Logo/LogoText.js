@@ -5,7 +5,7 @@ const StyledText = styled.div`
     margin-left: 14px;
     font-size: 30px;
     font-weight: 700;
-    font-family: 'MuseoModerno', cursive;
+    font-family: 'MuseoModerno', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
     color: white;
 
 

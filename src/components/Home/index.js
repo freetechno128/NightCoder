@@ -36,7 +36,9 @@ function Stripe() {
 
 function Pages() {
   const textures = useLoader(TextureLoader, state.images);
-  const [img1, img2, img3] = textures.map(texture => ((texture.minFilter = LinearFilter), texture));
+  const [img1, img2, img3] = textures.map(texture => {
+    return ((texture.minFilter = LinearFilter), texture)
+  });
   const { contentMaxWidth, mobile } = useBlock();
   const aspect = 1.75;
   const pixelWidth = contentMaxWidth * state.zoom;
@@ -59,16 +61,16 @@ function Pages() {
       {/* First section */}
       <Block factor={1.5} offset={1}>
         <Content left map={img1}>
-          <HTML style={{ width: pixelWidth / (mobile ? 1 : 2), textAlign: "left" }} position={[-contentMaxWidth / 2, -contentMaxWidth / 2 / aspect - 0.4, 1]}>
-            The substance can take you to heaven but it can also take you to hell.
+          <HTML style={{ width: pixelWidth / (mobile ? 1 : 2), textAlign: "left", color: "white" }} position={[-contentMaxWidth / 2, -contentMaxWidth / 2 / aspect - 0.4, 1]}>
+            Amet non eiusmod adipisicing labore mollit deserunt dolore.
           </HTML>
         </Content>
       </Block>
       {/* Second section */}
       <Block factor={2.0} offset={2}>
         <Content map={img2}>
-          <HTML style={{ width: pixelWidth / (mobile ? 1 : 2), textAlign: "right" }} position={[mobile ? -contentMaxWidth / 2 : 0, -contentMaxWidth / 2 / aspect - 0.4, 1]}>
-            We’ve found that the people whose EEG doesn’t show any alpha-wave activity when they’re relaxed aren’t likely to respond significantly to the substance.
+          <HTML style={{ width: pixelWidth / (mobile ? 1 : 2), textAlign: "right", color: "white" }} position={[mobile ? -contentMaxWidth / 2 : 0, -contentMaxWidth / 2 / aspect - 0.4, 1]}>
+            In duis laboris tempor amet anim.
           </HTML>
         </Content>
       </Block>
@@ -79,7 +81,7 @@ function Pages() {
       {/* Last section */}
       <Block factor={1.5} offset={3.2}>
         <Content left map={img3}>
-          <HTML style={{ width: pixelWidth / (mobile ? 1 : 2), textAlign: "left" }} position={[-contentMaxWidth / 2, -contentMaxWidth / 2 / aspect - 0.4, 1]}>
+          <HTML style={{ width: pixelWidth / (mobile ? 1 : 2), textAlign: "left", color: "white" }} position={[-contentMaxWidth / 2, -contentMaxWidth / 2 / aspect - 0.4, 1]}>
             Education and enlightenment.
           </HTML>
         </Content>
@@ -116,7 +118,7 @@ function Home() {
   return (
     <div className="homeContainer">
       <Canvas className="canvas" orthographic camera={{ zoom: state.zoom, position: [0, 0, 500] }}>
-        <Suspense fallback={<HTML center className="loading" children="Loading..." />}>
+        <Suspense fallback={<HTML center className="loading" children="" />}>
           <ambientLight />
           <pointLight position={[150, 150, 150]} intensity={0.55} />
 

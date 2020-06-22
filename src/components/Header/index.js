@@ -1,15 +1,15 @@
-import React from 'react';
+import React, {useState} from 'react';
 import Logo from './Logo';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import { ReactComponent as HamburgerMenu } from './hamburger_menu.svg';
-
+import "./styles.scss";
 
 const Nav = styled.nav`
 	background: rgba(0,0,0,0);
 	padding: 10px 26px;
 	position:absolute;
-	z-index:20;
+	z-index: 83894740;
 	width: 100vw;
 `;
 
@@ -47,33 +47,42 @@ const ItemButton = styled.li`
 
 
 const Header = () => {
-  return (
-    <Nav>
-      <Menu>
-		<ItemLogo>
-			<Logo />
-		</ItemLogo>
-		<Link to="/">
-			<ItemButton className="d-none d-lg-block" >
-				HOME
-			</ItemButton>
-		</Link>
-		<Link to="/blog">
-			<ItemButton className="d-none d-lg-block" >
-				BLOG
-			</ItemButton>
-		</Link>
-		<Link to="/contact">
-			<ItemButton className="d-none d-lg-block" >
-				CONTACT
-        	</ItemButton>
-		</Link>
-		<ItemButton className="d-lg-none d-xl-none ml-auto" style={{filter: "invert(1)"}}>
-			<HamburgerMenu />
-		</ItemButton>
-      </Menu>
-    </Nav>
-  );
+
+	const [ toggle, setToggle ] = useState(false);
+	return (
+		<Nav>
+			<Menu>
+				<ItemLogo>
+					<Logo />
+				</ItemLogo>
+				<Link to="/">
+					<ItemButton className="d-none d-lg-block" >
+						HOME
+					</ItemButton>
+				</Link>
+				<Link to="/blog">
+					<ItemButton className="d-none d-lg-block" >
+						BLOG
+					</ItemButton>
+				</Link>
+				<Link to="/contact">
+					<ItemButton className="d-none d-lg-block" >
+						CONTACT
+					</ItemButton>
+				</Link>
+				<ItemButton className="d-lg-none d-xl-none ml-auto" style={{}}>
+					<div 
+					  className={`mobile-nav-toggle ${toggle ? "mobile-nav-toggle--open" : ""}`} 
+					  onClick={() => {
+						setToggle(!toggle);
+					  }} 
+					>
+						<HamburgerMenu style={{margin: "10px 0 0 12px"}}/>
+					</div>
+				</ItemButton>
+			</Menu>
+		</Nav>
+	);
 }
 
 export default Header;

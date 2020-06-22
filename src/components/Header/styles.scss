@@ -1,0 +1,18 @@
+
+.mobile-nav-toggle {
+	background-color: white;
+	top: 0;
+	right: 0;
+	cursor: pointer;
+	position: fixed;
+	width: 54px;
+	height: 54px;
+	border-radius: 48% 0 48% 48%;
+	transition: 0.4s ease;
+
+	&--open {
+		width: 100vw;
+		height: 100vh;
+		border-radius: 0;
+	}
+}

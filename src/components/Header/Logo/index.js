@@ -1,5 +1,4 @@
 import React from 'react'
-import LogoIcon from './LogoIcon';
 import LogoText from './LogoText';
 import styled from 'styled-components';
 import { ReactComponent as MyLogo } from './wall.svg';
