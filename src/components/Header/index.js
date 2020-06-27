@@ -51,22 +51,26 @@ const Header = () => {
 	const [ toggle, setToggle ] = useState(false);
 	return (
 		<Nav>
-			<Menu>
+			<Menu
+				onClick={() => {
+					if (toggle) setToggle(!toggle)
+				}}
+			>
 				<ItemLogo>
 					<Logo />
 				</ItemLogo>
 				<Link to="/">
-					<ItemButton className="d-none d-lg-block" >
+					<ItemButton className={`${!toggle ? "d-none d-lg-block" : "text-black"}`} >
 						HOME
 					</ItemButton>
 				</Link>
 				<Link to="/blog">
-					<ItemButton className="d-none d-lg-block" >
+					<ItemButton className={`${!toggle ? "d-none d-lg-block" : "text-black"}`} >
 						BLOG
 					</ItemButton>
 				</Link>
 				<Link to="/contact">
-					<ItemButton className="d-none d-lg-block" >
+					<ItemButton className={`${!toggle ? "d-none d-lg-block" : "text-black"}`} >
 						CONTACT
 					</ItemButton>
 				</Link>
