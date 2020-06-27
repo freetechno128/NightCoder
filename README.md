@@ -3,10 +3,10 @@
 Coding blog in development ... 
 
 #### Desktop version:
-<img src="https://github.com/freetechno128/nightcoder/raw/master/preview.png" width="700">
+<img src="https://raw.githubusercontent.com/freetechno128/nightcoder/master/preview.png" width="700">
 
 #### Mobile version:
-<img src="https://github.com/freetechno128/nightcoder/raw/master/preview_mobile.png" width="300px">
+<img src="https://raw.githubusercontent.com/freetechno128/nightcoder/master/preview_mobile.png" width="300px">
 
 
 ## Things learned so far
